@@ -15,6 +15,8 @@ Usage:
   python fetch_images.py            # fetch covers for games that don't have one yet
   python fetch_images.py --force    # re-download everything
   python fetch_images.py --dry-run  # just list what would be searched, no network
+  python fetch_images.py --redo "Overwatch 2" "The Finals"   # re-fetch just these
+  python fetch_images.py --lookup "Overwatch"   # list IGDB matches with their ids
 
 Output:
   images/<slug>.jpg      one cover per unique game name
@@ -67,7 +69,13 @@ def normalise(text):
     """Lower-case, strip accents and punctuation, for comparing titles."""
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower()
     text = text.replace("&", "and")
-    return re.sub(r"[^a-z0-9]+", " ", text).strip()
+    text = re.sub(r"[^a-z0-9]+", " ", text).strip()
+    text = re.sub(r" version$", "", text)  # "Pokemon Platinum Version" == "Pokemon Platinum"
+    words = [ROMAN.get(w, w) for w in text.split()]  # "Dungeons II" == "Dungeons 2"
+    return " ".join(words)
+
+
+ROMAN = {"ii": "2", "iii": "3", "iv": "4", "v": "5", "vi": "6", "vii": "7", "viii": "8", "ix": "9", "x": "10"}
 
 
 def split_year(name):
@@ -114,6 +122,14 @@ def all_game_names():
 
 # ---------- IGDB ----------
 
+# IGDB game_type ids: main game, standalone expansion, remake, remaster, expanded game, port
+FULL_GAME_TYPES = "0,4,8,9,10,11"
+GAME_TYPE_NAMES = {
+    0: "main game", 1: "DLC", 2: "expansion", 3: "bundle", 4: "standalone", 5: "mod",
+    6: "episode", 7: "season", 8: "remake", 9: "remaster", 10: "expanded", 11: "port",
+    12: "fork", 13: "pack", 14: "update",
+}
+
 class IGDB:
     def __init__(self, client_id, client_secret):
         self.client_id = client_id
@@ -136,16 +152,50 @@ class IGDB:
             },
         )
 
+    def lookup(self, term):
+        """Print IGDB's results for a term, to help pick an override."""
+        safe = term.replace('"', '\\"')
+        results = self.query(
+            f'search "{safe}"; fields name,first_release_date,game_type,version_parent,cover.image_id; limit 25;'
+        )
+        if not results:
+            print("No results.")
+        for g in results:
+            year = time.gmtime(g["first_release_date"]).tm_year if g.get("first_release_date") else "????"
+            kind = GAME_TYPE_NAMES.get(g.get("game_type"), "?")
+            if g.get("version_parent"):
+                kind = "edition"
+            cover = "" if g.get("cover") else "  (no cover)"
+            print(f"  id {g['id']:>7}  {year}  {kind:12} {g['name']}{cover}")
+
     def by_id(self, game_id):
         results = self.query(f"fields name,first_release_date,cover.image_id; where id = {int(game_id)};")
         return results[0] if results else None
 
     def search(self, title, year=None):
         safe = title.replace('"', '\\"')
-        results = self.query(
-            f'search "{safe}"; fields name,first_release_date,cover.image_id; '
-            f"where cover != null; limit 20;"
-        )
+        fields = "fields name,first_release_date,cover.image_id;"
+        # 1. Exact title (case-insensitive), skipping special editions.
+        #    IGDB's fuzzy search often ranks bundles/DLC above the base game,
+        #    so this catches e.g. "Overwatch 2" or "The Finals" first.
+        results = self.query(f'{fields} where name ~ "{safe}" & cover != null & version_parent = null; limit 20;')
+        if results:
+            return pick_best(results, title, year)
+        # 2. Fuzzy search, only full games (no DLC, bundles, seasons, packs or special editions).
+        try:
+            results = self.query(
+                f'search "{safe}"; {fields} where cover != null & version_parent = null '
+                f"& game_type = ({FULL_GAME_TYPES}); limit 20;"
+            )
+        except urllib.error.HTTPError:
+            results = []
+        if results:
+            return pick_best(results, title, year)
+        results = self.query(f'search "{safe}"; {fields} where cover != null & version_parent = null; limit 20;')
+        if results:
+            return pick_best(results, title, year)
+        # 3. Fuzzy search, anything with a cover.
+        results = self.query(f'search "{safe}"; {fields} where cover != null; limit 20;')
         return pick_best(results, title, year)
 
 
@@ -195,7 +245,13 @@ def main():
     parser = argparse.ArgumentParser(description="Fetch game cover images from IGDB.")
     parser.add_argument("--force", action="store_true", help="re-download images that already exist")
     parser.add_argument("--dry-run", action="store_true", help="list searches without contacting IGDB")
+    parser.add_argument("--redo", nargs="+", metavar="NAME", help='re-fetch only these games, e.g. --redo "Overwatch 2" "The Finals"')
+    parser.add_argument("--lookup", metavar="TERM", help='show IGDB results for a search term, with ids for overrides')
     args = parser.parse_args()
+
+    if args.lookup:
+        IGDB(*load_credentials()).lookup(args.lookup)
+        return
 
     IMAGES_DIR.mkdir(exist_ok=True)
     names = all_game_names()
@@ -203,6 +259,12 @@ def main():
     manifest = load_json(MANIFEST_PATH, {})
 
     todo = []
+    if args.redo:
+        unknown = [n for n in args.redo if n not in names]
+        if unknown:
+            sys.exit("Not in your year files (check spelling): " + ", ".join(unknown))
+        names = args.redo
+        args.force = True
     for name in names:
         entry = manifest.get(name)
         has_image = entry and (ROOT / entry["file"]).exists()
@@ -258,7 +320,7 @@ def main():
             "igdb_id": game["id"],
         }
         flag = ""
-        if normalise(game["name"]) != normalise(split_year(name)[0]):
+        if override is None and normalise(game["name"]) != normalise(split_year(name)[0]):
             flag = "   <- check this"
             check.append(f"{name}  ->  {game['name']} ({release_year})")
         print(f"[{i}/{len(todo)}] {name} -> {game['name']} ({release_year}){flag}")

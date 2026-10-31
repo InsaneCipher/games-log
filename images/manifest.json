@@ -451,9 +451,9 @@
   },
   "Overwatch 2": {
     "file": "images/overwatch-2.jpg",
-    "matched": "Overwatch 2: Invasion Bundle",
+    "matched": "Overwatch",
     "year": 2023,
-    "igdb_id": 261349
+    "igdb_id": 125174
   },
   "Plague Inc.": {
     "file": "images/plague-inc.jpg",
@@ -472,6 +472,12 @@
     "matched": "Pokémon Platinum Version",
     "year": 2008,
     "igdb_id": 1519
+  },
+  "Pokémon Soul Silver": {
+    "file": "images/pokemon-soul-silver.jpg",
+    "matched": "Pokémon SoulSilver Version",
+    "year": 2009,
+    "igdb_id": 1520
   },
   "Pokémon Y": {
     "file": "images/pokemon-y.jpg",
@@ -613,9 +619,9 @@
   },
   "The Finals": {
     "file": "images/the-finals.jpg",
-    "matched": "Final Fantasy IV",
-    "year": 2007,
-    "igdb_id": 399
+    "matched": "The Finals",
+    "year": 2023,
+    "igdb_id": 214417
   },
   "The Legend of Zelda: Breath of the Wild": {
     "file": "images/the-legend-of-zelda-breath-of-the-wild.jpg",
@@ -637,9 +643,9 @@
   },
   "Tom Clancy's Rainbow Six Siege": {
     "file": "images/tom-clancy-s-rainbow-six-siege.jpg",
-    "matched": "Tom Clancy's Rainbow Six Siege: North Star",
-    "year": 2021,
-    "igdb_id": 158944
+    "matched": "Rainbow Six Siege",
+    "year": 2015,
+    "igdb_id": 7360
   },
   "Tom Clancy's Rainbow Six Vegas 2": {
     "file": "images/tom-clancy-s-rainbow-six-vegas-2.jpg",
@@ -661,9 +667,9 @@
   },
   "Warhammer 40,000: Space Marine 2": {
     "file": "images/warhammer-40-000-space-marine-2.jpg",
-    "matched": "Warhammer 40,000: Space Marine 2 - Ultima Limited Edition",
-    "year": 2025,
-    "igdb_id": 397518
+    "matched": "Warhammer 40,000: Space Marine II",
+    "year": 2024,
+    "igdb_id": 185252
   },
   "World of Tanks": {
     "file": "images/world-of-tanks.jpg",

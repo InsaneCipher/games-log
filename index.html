@@ -1,10 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games log</title>
+  <meta name="description" content="Every game I've played, month by month, since 2023.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1b2032;          /* deep slate, like a dim games room */
+      --bg-raised: #242a40;
+      --shelf: #343c5c;
+      --text: #ece9f4;
+      --muted: #9097b3;
+      --sticker: #f5b83d;     /* amber, like a price sticker on a game case */
+      --sticker-ink: #2a1d05;
+      --radius-cover: 6px;
+      --cover-w: clamp(170px, 14.5vw, 230px);
+      --font: "Bricolage Grotesque", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 600px at 85% -10%, #2b2f55 0%, transparent 60%),
+        var(--bg);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 1rem;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    .wrap { max-width: 1440px; margin: 0 auto; padding: 0 clamp(1rem, 4vw, 3rem); }
+
+    /* ---------- header ---------- */
+    header.top { padding-top: clamp(2.5rem, 5vw, 4rem); padding-bottom: 1rem; }
+    h1 {
+      font-size: clamp(3.2rem, 8vw, 6rem);
+      font-weight: 800;
+      font-variation-settings: "wdth" 75;
+      line-height: 0.88;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+    .intro { color: var(--muted); font-size: clamp(1rem, 2.2vw, 1.2rem); margin: 1rem 0 0; max-width: 40ch; }
+
+    /* ---------- year picker ---------- */
+    .picker {
+      position: sticky; top: 0; z-index: 20;
+      padding: 0.75rem 0;
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color .2s;
+    }
+    .picker.stuck { border-bottom-color: var(--shelf); }
+    .picker .wrap { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: space-between; }
+    .years { display: flex; gap: 0.25rem; background: var(--bg-raised); padding: 0.25rem; border-radius: 999px; overflow-x: auto; scrollbar-width: none; }
+    .years::-webkit-scrollbar { display: none; }
+    .years button {
+      font: inherit; font-weight: 600; font-size: 1rem;
+      color: var(--muted); background: none; border: 0;
+      padding: 0.45rem 1.1rem; border-radius: 999px; cursor: pointer;
+      transition: background .15s, color .15s;
+    }
+    .years button:hover { color: var(--text); }
+    .years button[aria-pressed="true"] { background: var(--text); color: var(--bg); }
+    .tally { color: var(--muted); font-size: 0.95rem; margin: 0; }
+    .tally strong { color: var(--text); font-weight: 700; }
+
+    /* ---------- months ---------- */
+    /* one row per month, January first; each row is a sideways-scrolling shelf */
+    main { padding: 1rem 0 4rem; }
+    .month {
+      display: grid;
+      grid-template-columns: 9rem minmax(0, 1fr);
+      gap: 1.5rem;
+      padding: 1.75rem 0 0;
+    }
+    .month-head { padding-top: 0.75rem; }
+    .month h2 {
+      font-size: 2rem; font-weight: 700;
+      font-variation-settings: "wdth" 80;
+      line-height: 1; margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .month .count { color: var(--muted); font-size: 0.9rem; margin: 0.35rem 0 0; }
+
+    /* arrow buttons for mouse users */
+    .arrows { display: flex; gap: 0.4rem; margin-top: 1rem; }
+    .arrows button {
+      width: 2.5rem; height: 2.5rem; border-radius: 50%;
+      border: 1px solid var(--shelf); background: var(--bg-raised); color: var(--text);
+      font: inherit; font-size: 1.1rem; line-height: 1; cursor: pointer;
+      display: grid; place-items: center;
+      transition: background .15s, opacity .15s;
+    }
+    .arrows button:hover:not(:disabled) { background: var(--shelf); }
+    .arrows button:disabled { opacity: .3; cursor: default; }
+    .arrows button:focus-visible { outline: 3px solid var(--sticker); outline-offset: 2px; }
+    .month.fits .arrows { display: none; }
+
+    /* the shelf: covers stand on a lit ledge */
+    .shelf {
+      display: flex; gap: 1.25rem;
+      overflow-x: auto; overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+      list-style: none; margin: 0;
+      padding: 0.75rem 0 1.5rem;
+      border-bottom: 2px solid var(--shelf);
+      scrollbar-width: thin; scrollbar-color: var(--shelf) transparent;
+    }
+    .shelf::-webkit-scrollbar { height: 8px; }
+    .shelf::-webkit-scrollbar-thumb { background: var(--shelf); border-radius: 8px; }
+    /* fade the right edge while there's more to scroll to */
+    .month.more-right .shelf { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 70px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 70px), transparent); }
+
+    /* ---------- game ---------- */
+    .game { margin: 0; flex: 0 0 var(--cover-w); scroll-snap-align: start; }
+    .case { position: relative; }
+    .cover {
+      position: relative;
+      aspect-ratio: 3 / 4;
+      border-radius: var(--radius-cover);
+      overflow: hidden;
+      background: var(--bg-raised);
+      box-shadow: 0 10px 24px -12px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.05);
+      transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s;
+    }
+    .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    /* thin sheen down the left edge, like the spine of a plastic case */
+    .cover::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(255,255,255,.14) 0 2px, rgba(255,255,255,0) 10px);
+      pointer-events: none;
+    }
+    .game:hover .cover, .game:focus-visible .cover, .game.open .cover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 34px -14px rgba(0,0,0,.85), 0 0 0 1px rgba(255,255,255,.08);
+    }
+
+    /* fallback tile if an image is missing */
+    .cover.blank {
+      display: grid; place-items: center; padding: 1rem; text-align: center;
+      background: linear-gradient(160deg, #3a4270, #23283f);
+      font-weight: 700; font-size: 1.05rem; line-height: 1.15;
+      font-variation-settings: "wdth" 85;
+    }
+
+    .game .name {
+      margin: 0.6rem 0 0;
+      font-size: 0.98rem; font-weight: 500; line-height: 1.25;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+
+    /* the note: a sticker that slaps onto the case on hover */
+    .note {
+      position: absolute; left: 0.5rem; bottom: 0.9rem; z-index: 2;
+      max-width: calc(100% - 1rem);
+      background: var(--sticker); color: var(--sticker-ink);
+      font-weight: 700; font-size: 0.9rem; line-height: 1.2;
+      padding: 0.4rem 0.7rem;
+      border-radius: 4px;
+      box-shadow: 0 6px 14px -6px rgba(0,0,0,.6);
+      transform: rotate(-4deg) scale(.6);
+      opacity: 0;
+      transition: transform .22s cubic-bezier(.3,1.6,.5,1), opacity .15s;
+      pointer-events: none;
+    }
+    .game:hover .note, .game:focus-visible .note, .game.open .note {
+      opacity: 1; transform: rotate(-4deg) scale(1);
+    }
+    /* small corner tab hints that a game has a note */
+    .has-note .cover::before {
+      content: ""; position: absolute; top: 0; right: 0; z-index: 1;
+      border-style: solid; border-width: 0 22px 22px 0;
+      border-color: transparent var(--sticker) transparent transparent;
+      transition: opacity .15s;
+    }
+    .has-note:hover .cover::before, .has-note.open .cover::before { opacity: 0; }
+    .has-note { cursor: pointer; }
+    .game:focus-visible { outline: none; }
+    .game:focus-visible .cover { outline: 3px solid var(--sticker); outline-offset: 3px; }
+
+    /* one entrance moment when a year loads */
+    .game.enter { animation: rise .45s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--i) * 18ms); }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+
+    .empty { color: var(--muted); padding: 3rem 0; }
+
+    footer { color: var(--muted); font-size: 0.85rem; padding: 2rem 0 3rem; }
+    footer a { color: inherit; }
+
+    /* ---------- mobile ---------- */
+    @media (max-width: 720px) {
+      .picker .wrap { gap: 0.5rem; }
+      .tally { width: 100%; }
+      .month { display: block; padding-top: 1.75rem; }
+      .month-head { display: flex; align-items: baseline; gap: 0.6rem; padding: 0; margin-bottom: 0.4rem; }
+      .month h2 { font-size: 1.7rem; }
+      .month .count { margin: 0; }
+      .arrows { display: none; }
+      .month.more-right .shelf { -webkit-mask-image: none; mask-image: none; }
+      /* covers become a swipeable shelf, edge to edge */
+      .shelf {
+        gap: 0.9rem;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: clamp(1rem, 4vw, 3rem);
+        margin: 0 calc(-1 * clamp(1rem, 4vw, 3rem));
+        padding: 0.5rem clamp(1rem, 4vw, 3rem) 1.5rem;
+        scrollbar-width: none;
+      }
+      .shelf::-webkit-scrollbar { display: none; }
+      .game { flex: 0 0 38vw; max-width: 160px; }
+      .game .name { font-size: 0.88rem; }
+      .game:hover .cover { transform: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
 </head>
 <body>
+  <header class="top wrap">
+    <h1>Games log</h1>
+    <p class="intro">Every game I've played, month by month, since 2023.</p>
+  </header>
 
+  <nav class="picker" aria-label="Choose a year">
+    <div class="wrap">
+      <div class="years" id="years"></div>
+      <p class="tally" id="tally" aria-live="polite"></p>
+    </div>
+  </nav>
+
+  <main class="wrap" id="log"></main>
+
+  <footer class="wrap">
+    Cover art from <a href="https://www.igdb.com" rel="noopener">IGDB</a>.
+  </footer>
+
+  <script>
+    const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const yearsEl = document.getElementById("years");
+    const tallyEl = document.getElementById("tally");
+    const logEl = document.getElementById("log");
+    const cache = {};
+    let manifest = {};
+
+    async function getJSON(path) {
+      const res = await fetch(path, { cache: "no-cache" });
+      if (!res.ok) throw new Error(`${path}: ${res.status}`);
+      return res.json();
+    }
+
+    async function init() {
+      try {
+        const [years, man] = await Promise.all([
+          getJSON("data/years.json"),
+          getJSON("images/manifest.json").catch(() => ({})),
+        ]);
+        manifest = man;
+        years.sort((a, b) => b - a);
+
+        yearsEl.innerHTML = years.map(y => `<button type="button" data-year="${y}">${y}</button>`).join("");
+        yearsEl.addEventListener("click", e => {
+          const btn = e.target.closest("button");
+          if (btn) { history.replaceState(null, "", "#" + btn.dataset.year); show(+btn.dataset.year); }
+        });
+
+        const fromHash = +location.hash.slice(1);
+        show(years.includes(fromHash) ? fromHash : years[0]);
+      } catch (err) {
+        logEl.innerHTML = `<p class="empty">Couldn't load the game list (${err.message}). If you opened this file directly, run it through a local server instead.</p>`;
+      }
+    }
+
+    async function show(year) {
+      for (const b of yearsEl.children) b.setAttribute("aria-pressed", b.dataset.year == year);
+      if (!cache[year]) cache[year] = await getJSON(`data/${year}.json`);
+      const data = cache[year];
+
+      // January to December; skip months with nothing logged yet
+      const months = data.months
+        .filter(m => m.games && m.games.length)
+        .sort((a, b) => MONTHS.indexOf(a.month) - MONTHS.indexOf(b.month));
+
+      const unique = new Set(months.flatMap(m => m.games.map(g => g.name))).size;
+      tallyEl.innerHTML = `<strong>${unique}</strong> different games in ${year}`;
+
+      if (!months.length) {
+        logEl.innerHTML = `<p class="empty">Nothing logged for ${year} yet.</p>`;
+        return;
+      }
+
+      let i = 0;
+      logEl.innerHTML = months.map(m => `
+        <section class="month" aria-labelledby="m-${year}-${m.month}">
+          <div class="month-head">
+            <h2 id="m-${year}-${m.month}">${m.month}</h2>
+            <p class="count">${m.games.length} ${m.games.length === 1 ? "game" : "games"}</p>
+            <div class="arrows">
+              <button type="button" data-dir="-1" aria-label="Scroll ${m.month} left">&#8592;</button>
+              <button type="button" data-dir="1" aria-label="Scroll ${m.month} right">&#8594;</button>
+            </div>
+          </div>
+          <ul class="shelf">
+            ${m.games.map(g => card(g, i++)).join("")}
+          </ul>
+        </section>`).join("");
+      logEl.querySelectorAll(".month").forEach(updateRow);
+    }
+
+    function esc(s) {
+      return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    function card(game, i) {
+      const entry = manifest[game.name];
+      const name = esc(game.name);
+      const cover = entry
+        ? `<img src="${esc(entry.file)}" alt="" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('blank');this.replaceWith(document.createTextNode(${esc(JSON.stringify(game.name))}))">`
+        : name;
+      const note = game.note ? `<span class="note">${esc(game.note)}</span>` : "";
+      const noteAttrs = game.note ? ` tabindex="0" aria-label="${name}, ${esc(game.note)}"` : "";
+      return `
+        <li class="game enter${game.note ? " has-note" : ""}" style="--i:${Math.min(i, 40)}"${noteAttrs}>
+          <div class="case">
+            <div class="cover${entry ? "" : " blank"}">${cover}</div>
+            ${note}
+          </div>
+          <p class="name">${name}</p>
+        </li>`;
+    }
+
+    // arrows, edge fade and disabled states for each row
+    function updateRow(month) {
+      const shelf = month.querySelector(".shelf");
+      const max = shelf.scrollWidth - shelf.clientWidth;
+      const [left, right] = month.querySelectorAll(".arrows button");
+      month.classList.toggle("fits", max <= 2);
+      month.classList.toggle("more-right", shelf.scrollLeft < max - 2);
+      left.disabled = shelf.scrollLeft <= 2;
+      right.disabled = shelf.scrollLeft >= max - 2;
+    }
+    logEl.addEventListener("scroll", e => {
+      if (e.target.classList && e.target.classList.contains("shelf")) updateRow(e.target.closest(".month"));
+    }, true);
+    window.addEventListener("resize", () => logEl.querySelectorAll(".month").forEach(updateRow));
+    logEl.addEventListener("click", e => {
+      const btn = e.target.closest(".arrows button");
+      if (!btn) return;
+      const shelf = btn.closest(".month").querySelector(".shelf");
+      shelf.scrollBy({ left: btn.dataset.dir * shelf.clientWidth * 0.8, behavior: "smooth" });
+    });
+
+    // tap to show a note on touch screens (no hover there)
+    logEl.addEventListener("click", e => {
+      const g = e.target.closest(".has-note");
+      document.querySelectorAll(".game.open").forEach(o => { if (o !== g) o.classList.remove("open"); });
+      if (g) g.classList.toggle("open");
+    });
+    logEl.addEventListener("keydown", e => {
+      if ((e.key === "Enter" || e.key === " ") && e.target.matches(".has-note")) {
+        e.preventDefault(); e.target.classList.toggle("open");
+      }
+    });
+
+    // border under the year picker once it sticks
+    const picker = document.querySelector(".picker");
+    new IntersectionObserver(([e]) => picker.classList.toggle("stuck", e.intersectionRatio < 1),
+      { threshold: [1], rootMargin: "-1px 0px 0px 0px" }).observe(picker);
+
+    init();
+  </script>
 </body>
 </html>
