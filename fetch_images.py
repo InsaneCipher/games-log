@@ -31,6 +31,9 @@ Fixing a wrong or missing match:
        "Gambit": 123456
      }
   Then run with --force, or delete that game's image and run normally.
+  To use your own image instead (e.g. for a website IGDB doesn't list), save it
+  in images/custom/ and point to it with "file:":
+     { "Gambit": "file:images/custom/gambit.png" }
   (Find a game's id on igdb.com: it's shown on the game's page.)
 """
 
@@ -258,6 +261,18 @@ def main():
     overrides = load_json(OVERRIDES_PATH, {})
     manifest = load_json(MANIFEST_PATH, {})
 
+    # Custom images: an override like "file:images/custom/gambit.png" uses your own
+    # image instead of searching IGDB (for things IGDB doesn't have, like websites).
+    custom = {n: o[5:] for n, o in overrides.items() if isinstance(o, str) and o.startswith("file:")}
+    for name, path in custom.items():
+        if not (ROOT / path).exists():
+            print(f"Custom image for {name} not found: {path}")
+            continue
+        manifest[name] = {"file": path, "matched": "custom image"}
+    if custom and not args.dry_run:
+        with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
+            json.dump(dict(sorted(manifest.items())), f, ensure_ascii=False, indent=2)
+
     todo = []
     if args.redo:
         unknown = [n for n in args.redo if n not in names]
@@ -268,6 +283,8 @@ def main():
     for name in names:
         entry = manifest.get(name)
         has_image = entry and (ROOT / entry["file"]).exists()
+        if name in custom:
+            continue
         if args.force or not has_image:
             todo.append(name)
 

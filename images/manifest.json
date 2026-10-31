@@ -324,10 +324,8 @@
     "igdb_id": 348330
   },
   "Gambit": {
-    "file": "images/gambit.jpg",
-    "matched": "Gambit!",
-    "year": 2022,
-    "igdb_id": 193173
+    "file": "images/custom/gambit.png",
+    "matched": "custom image"
   },
   "Gamble With Your Friends": {
     "file": "images/gamble-with-your-friends.jpg",
