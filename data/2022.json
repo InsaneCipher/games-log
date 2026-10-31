@@ -5,16 +5,20 @@
       "month": "January",
       "games": [
         {
-          "name": "World of Warships"
+          "name": "World of Warships",
+          "platform": "PC"
         },
         {
-          "name": "Paladins"
+          "name": "Paladins",
+          "platform": "PC"
         },
         {
-          "name": "War Thunder"
+          "name": "War Thunder",
+          "platform": "PC"
         },
         {
-          "name": "Halo Infinite"
+          "name": "Halo Infinite",
+          "platform": "PC"
         }
       ]
     },
@@ -22,13 +26,16 @@
       "month": "February",
       "games": [
         {
-          "name": "Terraria"
+          "name": "Terraria",
+          "platform": "PC"
         },
         {
-          "name": "Far Cry 5"
+          "name": "Far Cry 5",
+          "platform": "PC"
         },
         {
-          "name": "Borderlands 3"
+          "name": "Borderlands 3",
+          "platform": "PC"
         }
       ]
     },
@@ -36,13 +43,16 @@
       "month": "March",
       "games": [
         {
-          "name": "Terraria"
+          "name": "Terraria",
+          "platform": "PC"
         },
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         },
         {
-          "name": "Anno 1404"
+          "name": "Anno 1404",
+          "platform": "PC"
         }
       ]
     },
@@ -50,7 +60,8 @@
       "month": "April",
       "games": [
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         }
       ]
     },
@@ -58,10 +69,12 @@
       "month": "May",
       "games": [
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         },
         {
-          "name": "Hearts of Iron IV"
+          "name": "Hearts of Iron IV",
+          "platform": "PC"
         }
       ]
     },
@@ -69,19 +82,24 @@
       "month": "June",
       "games": [
         {
-          "name": "Risk of Rain 2"
+          "name": "Risk of Rain 2",
+          "platform": "PC"
         },
         {
-          "name": "Far Cry New Dawn"
+          "name": "Far Cry New Dawn",
+          "platform": "PC"
         },
         {
-          "name": "Hero's Hour"
+          "name": "Hero's Hour",
+          "platform": "PC"
         },
         {
-          "name": "Supreme Commander 2"
+          "name": "Supreme Commander 2",
+          "platform": "PC"
         },
         {
-          "name": "Titanfall 2"
+          "name": "Titanfall 2",
+          "platform": "PC"
         }
       ]
     },
@@ -89,13 +107,16 @@
       "month": "July",
       "games": [
         {
-          "name": "Destiny 2"
+          "name": "Destiny 2",
+          "platform": "PC"
         },
         {
-          "name": "Grand Theft Auto V"
+          "name": "Grand Theft Auto V",
+          "platform": "PC"
         },
         {
-          "name": "Terraria"
+          "name": "Terraria",
+          "platform": "PC"
         }
       ]
     },
@@ -103,10 +124,12 @@
       "month": "August",
       "games": [
         {
-          "name": "Grand Theft Auto V"
+          "name": "Grand Theft Auto V",
+          "platform": "PC"
         },
         {
-          "name": "Terraria"
+          "name": "Terraria",
+          "platform": "PC"
         }
       ]
     },
@@ -114,13 +137,16 @@
       "month": "September",
       "games": [
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         },
         {
-          "name": "Slime Rancher 2"
+          "name": "Slime Rancher 2",
+          "platform": "PC"
         },
         {
-          "name": "ARK: Survival Evolved"
+          "name": "ARK: Survival Evolved",
+          "platform": "PC"
         }
       ]
     },
@@ -128,7 +154,8 @@
       "month": "October",
       "games": [
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         }
       ]
     },
@@ -136,13 +163,16 @@
       "month": "November",
       "games": [
         {
-          "name": "Hearts of Iron IV"
+          "name": "Hearts of Iron IV",
+          "platform": "PC"
         },
         {
-          "name": "Call of Duty: Modern Warfare II (2022)"
+          "name": "Call of Duty: Modern Warfare II (2022)",
+          "platform": "PC"
         },
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         }
       ]
     },
@@ -150,13 +180,16 @@
       "month": "December",
       "games": [
         {
-          "name": "Anno 1800"
+          "name": "Anno 1800",
+          "platform": "PC"
         },
         {
-          "name": "Hearts of Iron IV"
+          "name": "Hearts of Iron IV",
+          "platform": "PC"
         },
         {
-          "name": "Call of Duty: Modern Warfare II (2022)"
+          "name": "Call of Duty: Modern Warfare II (2022)",
+          "platform": "PC"
         }
       ]
     }

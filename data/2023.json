@@ -5,16 +5,20 @@
       "month": "January",
       "games": [
         {
-          "name": "Far Cry New Dawn"
+          "name": "Far Cry New Dawn",
+          "platform": "PC"
         },
         {
-          "name": "Battlefield 3"
+          "name": "Battlefield 3",
+          "platform": "PC"
         },
         {
-          "name": "Battlefield 4"
+          "name": "Battlefield 4",
+          "platform": "PC"
         },
         {
-          "name": "Battlefield 1"
+          "name": "Battlefield 1",
+          "platform": "PC"
         }
       ]
     },
@@ -22,10 +26,12 @@
       "month": "February",
       "games": [
         {
-          "name": "Dragon Age: Inquisition"
+          "name": "Dragon Age: Inquisition",
+          "platform": "PC"
         },
         {
-          "name": "Valheim"
+          "name": "Valheim",
+          "platform": "PC"
         }
       ]
     },
@@ -33,7 +39,8 @@
       "month": "March",
       "games": [
         {
-          "name": "Risk of Rain 2"
+          "name": "Risk of Rain 2",
+          "platform": "PC"
         }
       ]
     },
@@ -41,10 +48,12 @@
       "month": "April",
       "games": [
         {
-          "name": "Forza Horizon 5"
+          "name": "Forza Horizon 5",
+          "platform": "PC"
         },
         {
-          "name": "Sea of Thieves"
+          "name": "Sea of Thieves",
+          "platform": "PC"
         }
       ]
     },
@@ -52,13 +61,16 @@
       "month": "May",
       "games": [
         {
-          "name": "LEGO Star Wars: The Skywalker Saga"
+          "name": "LEGO Star Wars: The Skywalker Saga",
+          "platform": "PC"
         },
         {
-          "name": "The Legend of Zelda: Breath of the Wild"
+          "name": "The Legend of Zelda: Breath of the Wild",
+          "platform": "Switch"
         },
         {
-          "name": "The Legend of Zelda: Tears of the Kingdom"
+          "name": "The Legend of Zelda: Tears of the Kingdom",
+          "platform": "Switch"
         }
       ]
     },
@@ -66,16 +78,20 @@
       "month": "June",
       "games": [
         {
-          "name": "Pokémon: Let's Go, Pikachu!"
+          "name": "Pokémon: Let's Go, Pikachu!",
+          "platform": "Switch"
         },
         {
-          "name": "Pokémon: Sword"
+          "name": "Pokémon: Sword",
+          "platform": "Switch"
         },
         {
-          "name": "Call of Duty: Modern Warfare (2019)"
+          "name": "Call of Duty: Modern Warfare (2019)",
+          "platform": "PC"
         },
         {
-          "name": "Far Cry 3: Blood Dragon"
+          "name": "Far Cry 3: Blood Dragon",
+          "platform": "PC"
         }
       ]
     },
@@ -83,13 +99,16 @@
       "month": "July",
       "games": [
         {
-          "name": "Mafia"
+          "name": "Mafia",
+          "platform": "PC"
         },
         {
-          "name": "Overwatch 2"
+          "name": "Overwatch 2",
+          "platform": "PC"
         },
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         }
       ]
     },
@@ -97,10 +116,12 @@
       "month": "August",
       "games": [
         {
-          "name": "Terraria"
+          "name": "Terraria",
+          "platform": "Switch"
         },
         {
-          "name": "New Super Mario Bros. U Deluxe"
+          "name": "New Super Mario Bros. U Deluxe",
+          "platform": "Switch"
         }
       ]
     },
@@ -108,19 +129,24 @@
       "month": "September",
       "games": [
         {
-          "name": "Portal"
+          "name": "Portal",
+          "platform": "PC"
         },
         {
-          "name": "Portal 2"
+          "name": "Portal 2",
+          "platform": "PC"
         },
         {
-          "name": "Minecraft"
+          "name": "Minecraft",
+          "platform": "PC"
         },
         {
-          "name": "Tom Clancy's Rainbow Six Vegas 2"
+          "name": "Tom Clancy's Rainbow Six Vegas 2",
+          "platform": "PC"
         },
         {
-          "name": "Far Cry 6"
+          "name": "Far Cry 6",
+          "platform": "PC"
         }
       ]
     },
@@ -128,13 +154,16 @@
       "month": "October",
       "games": [
         {
-          "name": "Farming Simulator 22"
+          "name": "Farming Simulator 22",
+          "platform": "PC"
         },
         {
-          "name": "Tom Clancy's Rainbow Six Siege"
+          "name": "Tom Clancy's Rainbow Six Siege",
+          "platform": "PC"
         },
         {
-          "name": "Middle-earth: Shadow of War"
+          "name": "Middle-earth: Shadow of War",
+          "platform": "PC"
         }
       ]
     },
@@ -142,10 +171,12 @@
       "month": "November",
       "games": [
         {
-          "name": "Red Faction: Armageddon"
+          "name": "Red Faction: Armageddon",
+          "platform": "PC"
         },
         {
-          "name": "Apex Legends"
+          "name": "Apex Legends",
+          "platform": "PC"
         }
       ]
     },
@@ -153,22 +184,28 @@
       "month": "December",
       "games": [
         {
-          "name": "Lethal Company"
+          "name": "Lethal Company",
+          "platform": "PC"
         },
         {
-          "name": "Apex Legends"
+          "name": "Apex Legends",
+          "platform": "PC"
         },
         {
-          "name": "Titanfall 2"
+          "name": "Titanfall 2",
+          "platform": "PC"
         },
         {
-          "name": "God of War (2018)"
+          "name": "God of War (2018)",
+          "platform": "PC"
         },
         {
-          "name": "Far Cry 6"
+          "name": "Far Cry 6",
+          "platform": "PC"
         },
         {
-          "name": "Super Mario Bros. Wonder"
+          "name": "Super Mario Bros. Wonder",
+          "platform": "Switch"
         }
       ]
     }

@@ -5,10 +5,12 @@
       "month": "January",
       "games": [
         {
-          "name": "Doom (2016)"
+          "name": "Doom (2016)",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "Skyblock & Prisons"
         }
       ]
@@ -17,13 +19,16 @@
       "month": "February",
       "games": [
         {
-          "name": "Fortnite"
+          "name": "Fortnite",
+          "platform": "PC"
         },
         {
-          "name": "Overwatch 2"
+          "name": "Overwatch 2",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "SC9"
         }
       ]
@@ -32,13 +37,16 @@
       "month": "March",
       "games": [
         {
-          "name": "Immortals Fenyx Rising"
+          "name": "Immortals Fenyx Rising",
+          "platform": "PC"
         },
         {
-          "name": "Grand Theft Auto V"
+          "name": "Grand Theft Auto V",
+          "platform": "PC"
         },
         {
-          "name": "World of Tanks Blitz"
+          "name": "World of Tanks Blitz",
+          "platform": "PC"
         }
       ]
     },
@@ -46,10 +54,12 @@
       "month": "April",
       "games": [
         {
-          "name": "F1 2018"
+          "name": "F1 2018",
+          "platform": "PC"
         },
         {
-          "name": "F1 2021"
+          "name": "F1 2021",
+          "platform": "PC"
         }
       ]
     },
@@ -57,13 +67,16 @@
       "month": "May",
       "games": [
         {
-          "name": "Minecraft Dungeons"
+          "name": "Minecraft Dungeons",
+          "platform": "PC"
         },
         {
-          "name": "Doom Eternal"
+          "name": "Doom Eternal",
+          "platform": "PC"
         },
         {
-          "name": "Star Wars Jedi: Survivor"
+          "name": "Star Wars Jedi: Survivor",
+          "platform": "PC"
         }
       ]
     },
@@ -71,23 +84,29 @@
       "month": "June",
       "games": [
         {
-          "name": "Call of Duty 4: Modern Warfare"
+          "name": "Call of Duty 4: Modern Warfare",
+          "platform": "PC"
         },
         {
-          "name": "Call of Duty: Modern Warfare 2"
+          "name": "Call of Duty: Modern Warfare 2",
+          "platform": "PC"
         },
         {
-          "name": "Call of Duty: Modern Warfare 3"
+          "name": "Call of Duty: Modern Warfare 3",
+          "platform": "PC"
         },
         {
-          "name": "Euro Truck Simulator 2"
+          "name": "Euro Truck Simulator 2",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "AZK"
         },
         {
-          "name": "Rematch"
+          "name": "Rematch",
+          "platform": "PC"
         }
       ]
     },
@@ -95,13 +114,16 @@
       "month": "July",
       "games": [
         {
-          "name": "Roboquest"
+          "name": "Roboquest",
+          "platform": "PC"
         },
         {
-          "name": "Ziggurat 2"
+          "name": "Ziggurat 2",
+          "platform": "PC"
         },
         {
-          "name": "Gunfire Reborn"
+          "name": "Gunfire Reborn",
+          "platform": "PC"
         }
       ]
     },
@@ -109,22 +131,28 @@
       "month": "August",
       "games": [
         {
-          "name": "F1 2011"
+          "name": "F1 2011",
+          "platform": "PS Vita"
         },
         {
-          "name": "Asphalt Injection"
+          "name": "Asphalt Injection",
+          "platform": "PS Vita"
         },
         {
-          "name": "FIFA 14"
+          "name": "FIFA 14",
+          "platform": "PS Vita"
         },
         {
-          "name": "World of Tanks"
+          "name": "World of Tanks",
+          "platform": "PC"
         },
         {
-          "name": "Pokémon Y"
+          "name": "Pokémon Y",
+          "platform": "3DS"
         },
         {
-          "name": "New Super Mario Bros."
+          "name": "New Super Mario Bros.",
+          "platform": "3DS"
         }
       ]
     },
@@ -132,13 +160,16 @@
       "month": "September",
       "games": [
         {
-          "name": "World of Tanks"
+          "name": "World of Tanks",
+          "platform": "PC"
         },
         {
-          "name": "Pokémon Soul Silver"
+          "name": "Pokémon Soul Silver",
+          "platform": "3DS"
         },
         {
-          "name": "Pokémon Platinum"
+          "name": "Pokémon Platinum",
+          "platform": "3DS"
         }
       ]
     },
@@ -146,19 +177,24 @@
       "month": "October",
       "games": [
         {
-          "name": "New Super Mario Bros."
+          "name": "New Super Mario Bros.",
+          "platform": "3DS"
         },
         {
-          "name": "New Super Mario Bros. 2"
+          "name": "New Super Mario Bros. 2",
+          "platform": "3DS"
         },
         {
-          "name": "The Farmer Was Replaced"
+          "name": "The Farmer Was Replaced",
+          "platform": "PC"
         },
         {
-          "name": "Resident Evil 7: Biohazard"
+          "name": "Resident Evil 7: Biohazard",
+          "platform": "PC"
         },
         {
-          "name": "Counter-Strike 2"
+          "name": "Counter-Strike 2",
+          "platform": "PC"
         }
       ]
     },
@@ -166,13 +202,16 @@
       "month": "November",
       "games": [
         {
-          "name": "Far Cry Primal"
+          "name": "Far Cry Primal",
+          "platform": "PC"
         },
         {
-          "name": "Counter-Strike 2"
+          "name": "Counter-Strike 2",
+          "platform": "PC"
         },
         {
-          "name": "World of Tanks"
+          "name": "World of Tanks",
+          "platform": "PC"
         }
       ]
     },
@@ -180,13 +219,16 @@
       "month": "December",
       "games": [
         {
-          "name": "F1 25"
+          "name": "F1 25",
+          "platform": "PC"
         },
         {
-          "name": "Balatro"
+          "name": "Balatro",
+          "platform": "PC"
         },
         {
-          "name": "Counter-Strike 2"
+          "name": "Counter-Strike 2",
+          "platform": "PC"
         }
       ]
     }

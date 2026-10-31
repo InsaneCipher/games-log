@@ -5,16 +5,20 @@
       "month": "January",
       "games": [
         {
-          "name": "Super Mario Bros. Wonder"
+          "name": "Super Mario Bros. Wonder",
+          "platform": "Switch"
         },
         {
-          "name": "Metro Exodus"
+          "name": "Metro Exodus",
+          "platform": "PC"
         },
         {
-          "name": "Cyberpunk 2077"
+          "name": "Cyberpunk 2077",
+          "platform": "PC"
         },
         {
-          "name": "The Finals"
+          "name": "The Finals",
+          "platform": "PC"
         }
       ]
     },
@@ -22,13 +26,16 @@
       "month": "February",
       "games": [
         {
-          "name": "Assassin's Creed Origins"
+          "name": "Assassin's Creed Origins",
+          "platform": "PC"
         },
         {
-          "name": "Helldivers 2"
+          "name": "Helldivers 2",
+          "platform": "PC"
         },
         {
-          "name": "Risk of Rain 2"
+          "name": "Risk of Rain 2",
+          "platform": "PC"
         }
       ]
     },
@@ -36,10 +43,12 @@
       "month": "March",
       "games": [
         {
-          "name": "World of Tanks"
+          "name": "World of Tanks",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "Solo"
         }
       ]
@@ -48,14 +57,17 @@
       "month": "April",
       "games": [
         {
-          "name": "World of Tanks"
+          "name": "World of Tanks",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "FD"
         },
         {
-          "name": "Pokémon Brilliant Diamond"
+          "name": "Pokémon Brilliant Diamond",
+          "platform": "Switch"
         }
       ]
     },
@@ -63,16 +75,20 @@
       "month": "May",
       "games": [
         {
-          "name": "Dungeon Defenders II"
+          "name": "Dungeon Defenders II",
+          "platform": "PC"
         },
         {
-          "name": "Star Wars Jedi: Fallen Order"
+          "name": "Star Wars Jedi: Fallen Order",
+          "platform": "PC"
         },
         {
-          "name": "Detroit: Become Human"
+          "name": "Detroit: Become Human",
+          "platform": "PC"
         },
         {
-          "name": "Saints Row IV"
+          "name": "Saints Row IV",
+          "platform": "PC"
         }
       ]
     },
@@ -81,16 +97,20 @@
       "games": [
         {
           "name": "Grand Theft Auto V",
+          "platform": "PC",
           "note": "Story mode"
         },
         {
-          "name": "Hearts of Iron IV"
+          "name": "Hearts of Iron IV",
+          "platform": "PC"
         },
         {
-          "name": "Apex Legends"
+          "name": "Apex Legends",
+          "platform": "PC"
         },
         {
-          "name": "Minecraft"
+          "name": "Minecraft",
+          "platform": "PC"
         }
       ]
     },
@@ -98,16 +118,20 @@
       "month": "July",
       "games": [
         {
-          "name": "Resident Evil Village"
+          "name": "Resident Evil Village",
+          "platform": "PC"
         },
         {
-          "name": "Cookie Clicker"
+          "name": "Cookie Clicker",
+          "platform": "PC"
         },
         {
-          "name": "Plague Inc."
+          "name": "Plague Inc.",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "SC8"
         }
       ]
@@ -117,6 +141,7 @@
       "games": [
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "Gun Server"
         }
       ]
@@ -125,25 +150,32 @@
       "month": "September",
       "games": [
         {
-          "name": "Euro Truck Simulator 2"
+          "name": "Euro Truck Simulator 2",
+          "platform": "PC"
         },
         {
-          "name": "War Thunder"
+          "name": "War Thunder",
+          "platform": "PC"
         },
         {
-          "name": "EA Sports FC 24"
+          "name": "EA Sports FC 24",
+          "platform": "PC"
         },
         {
-          "name": "F1 23"
+          "name": "F1 23",
+          "platform": "PC"
         },
         {
-          "name": "Risk of Rain 2"
+          "name": "Risk of Rain 2",
+          "platform": "PC"
         },
         {
-          "name": "Warhammer 40,000: Space Marine 2"
+          "name": "Warhammer 40,000: Space Marine 2",
+          "platform": "PC"
         },
         {
-          "name": "Forza Horizon 4"
+          "name": "Forza Horizon 4",
+          "platform": "PC"
         }
       ]
     },
@@ -151,19 +183,24 @@
       "month": "October",
       "games": [
         {
-          "name": "Call of Duty: Black Ops"
+          "name": "Call of Duty: Black Ops",
+          "platform": "PC"
         },
         {
-          "name": "Call of Duty: Black Ops II"
+          "name": "Call of Duty: Black Ops II",
+          "platform": "PC"
         },
         {
-          "name": "Forza Horizon 4"
+          "name": "Forza Horizon 4",
+          "platform": "PC"
         },
         {
-          "name": "Overwatch 2"
+          "name": "Overwatch 2",
+          "platform": "PC"
         },
         {
-          "name": "Call of Duty: Black Ops 6"
+          "name": "Call of Duty: Black Ops 6",
+          "platform": "PC"
         }
       ]
     },
@@ -171,10 +208,12 @@
       "month": "November",
       "games": [
         {
-          "name": "Call of Duty: Black Ops 6"
+          "name": "Call of Duty: Black Ops 6",
+          "platform": "PC"
         },
         {
-          "name": "Farming Simulator 25"
+          "name": "Farming Simulator 25",
+          "platform": "PC"
         }
       ]
     },
@@ -182,13 +221,16 @@
       "month": "December",
       "games": [
         {
-          "name": "Marvel Rivals"
+          "name": "Marvel Rivals",
+          "platform": "PC"
         },
         {
-          "name": "Bloons TD 6"
+          "name": "Bloons TD 6",
+          "platform": "PC"
         },
         {
-          "name": "God of War Ragnarök"
+          "name": "God of War Ragnarök",
+          "platform": "PC"
         }
       ]
     }

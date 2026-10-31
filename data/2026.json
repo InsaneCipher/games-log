@@ -5,19 +5,24 @@
       "month": "January",
       "games": [
         {
-          "name": "Balatro"
+          "name": "Balatro",
+          "platform": "PC"
         },
         {
-          "name": "Borderlands 3"
+          "name": "Borderlands 3",
+          "platform": "PC"
         },
         {
-          "name": "Deadzone: Rogue"
+          "name": "Deadzone: Rogue",
+          "platform": "PC"
         },
         {
-          "name": "Counter-Strike 2"
+          "name": "Counter-Strike 2",
+          "platform": "PC"
         },
         {
-          "name": "Risk: Global Domination"
+          "name": "Risk: Global Domination",
+          "platform": "PC"
         }
       ]
     },
@@ -25,19 +30,24 @@
       "month": "February",
       "games": [
         {
-          "name": "Borderlands"
+          "name": "Borderlands",
+          "platform": "PC"
         },
         {
-          "name": "Borderlands 2"
+          "name": "Borderlands 2",
+          "platform": "PC"
         },
         {
-          "name": "Borderlands 3"
+          "name": "Borderlands 3",
+          "platform": "PC"
         },
         {
-          "name": "Forza Horizon 5"
+          "name": "Forza Horizon 5",
+          "platform": "PC"
         },
         {
-          "name": "New Super Mario Bros. 2"
+          "name": "New Super Mario Bros. 2",
+          "platform": "3DS"
         }
       ]
     },
@@ -45,23 +55,29 @@
       "month": "March",
       "games": [
         {
-          "name": "Hearts of Iron IV"
+          "name": "Hearts of Iron IV",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "AZK"
         },
         {
-          "name": "Tank Mechanic Simulator"
+          "name": "Tank Mechanic Simulator",
+          "platform": "PC"
         },
         {
-          "name": "Dead Space (2023)"
+          "name": "Dead Space (2023)",
+          "platform": "PC"
         },
         {
-          "name": "Resident Evil 2 (2019)"
+          "name": "Resident Evil 2 (2019)",
+          "platform": "PC"
         },
         {
-          "name": "Resident Evil 3 (2020)"
+          "name": "Resident Evil 3 (2020)",
+          "platform": "PC"
         }
       ]
     },
@@ -69,16 +85,20 @@
       "month": "April",
       "games": [
         {
-          "name": "Resident Evil 4 (2023)"
+          "name": "Resident Evil 4 (2023)",
+          "platform": "PC"
         },
         {
-          "name": "Little Nightmares"
+          "name": "Little Nightmares",
+          "platform": "PC"
         },
         {
-          "name": "War Thunder"
+          "name": "War Thunder",
+          "platform": "PC"
         },
         {
-          "name": "Terraria"
+          "name": "Terraria",
+          "platform": "PC"
         }
       ]
     },
@@ -86,10 +106,12 @@
       "month": "May",
       "games": [
         {
-          "name": "Terraria"
+          "name": "Terraria",
+          "platform": "PC"
         },
         {
-          "name": "Forza Horizon 6"
+          "name": "Forza Horizon 6",
+          "platform": "PC"
         }
       ]
     },
@@ -97,10 +119,12 @@
       "month": "June",
       "games": [
         {
-          "name": "Gamble With Your Friends"
+          "name": "Gamble With Your Friends",
+          "platform": "PC"
         },
         {
-          "name": "Counter-Strike 2"
+          "name": "Counter-Strike 2",
+          "platform": "PC"
         }
       ]
     },
@@ -108,13 +132,16 @@
       "month": "July",
       "games": [
         {
-          "name": "Counter-Strike 2"
+          "name": "Counter-Strike 2",
+          "platform": "PC"
         },
         {
-          "name": "Dredge"
+          "name": "Dredge",
+          "platform": "PC"
         },
         {
-          "name": "Grand Theft Auto IV"
+          "name": "Grand Theft Auto IV",
+          "platform": "PC"
         }
       ]
     },
@@ -122,10 +149,12 @@
       "month": "August",
       "games": [
         {
-          "name": "Grand Theft Auto: Chinatown Wars"
+          "name": "Grand Theft Auto: Chinatown Wars",
+          "platform": "3DS"
         },
         {
-          "name": "Gambit"
+          "name": "Gambit",
+          "platform": "PC"
         }
       ]
     },
@@ -133,19 +162,24 @@
       "month": "September",
       "games": [
         {
-          "name": "Gambit"
+          "name": "Gambit",
+          "platform": "PC"
         },
         {
-          "name": "Counter-Strike 2"
+          "name": "Counter-Strike 2",
+          "platform": "PC"
         },
         {
-          "name": "Diablo IV"
+          "name": "Diablo IV",
+          "platform": "PC"
         },
         {
-          "name": "World of Warships Legends"
+          "name": "World of Warships Legends",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "AZK"
         }
       ]
@@ -154,23 +188,29 @@
       "month": "October",
       "games": [
         {
-          "name": "Minecraft Dungeons 2"
+          "name": "Minecraft Dungeons 2",
+          "platform": "PC"
         },
         {
           "name": "Minecraft",
+          "platform": "PC",
           "note": "SC"
         },
         {
-          "name": "Halo: Reach"
+          "name": "Halo: Reach",
+          "platform": "PC"
         },
         {
-          "name": "Halo: Combat Evolved"
+          "name": "Halo: Combat Evolved",
+          "platform": "PC"
         },
         {
-          "name": "Halo 2"
+          "name": "Halo 2",
+          "platform": "PC"
         },
         {
-          "name": "Call of Duty: Black Ops 6"
+          "name": "Call of Duty: Black Ops 6",
+          "platform": "PC"
         }
       ]
     },
