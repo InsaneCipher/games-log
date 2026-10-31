@@ -1,0 +1,164 @@
+{
+  "year": 2022,
+  "months": [
+    {
+      "month": "January",
+      "games": [
+        {
+          "name": "World of Warships"
+        },
+        {
+          "name": "Paladins"
+        },
+        {
+          "name": "War Thunder"
+        },
+        {
+          "name": "Halo Infinite"
+        }
+      ]
+    },
+    {
+      "month": "February",
+      "games": [
+        {
+          "name": "Terraria"
+        },
+        {
+          "name": "Far Cry 5"
+        },
+        {
+          "name": "Borderlands 3"
+        }
+      ]
+    },
+    {
+      "month": "March",
+      "games": [
+        {
+          "name": "Terraria"
+        },
+        {
+          "name": "World of Tanks Blitz"
+        },
+        {
+          "name": "Anno 1404"
+        }
+      ]
+    },
+    {
+      "month": "April",
+      "games": [
+        {
+          "name": "World of Tanks Blitz"
+        }
+      ]
+    },
+    {
+      "month": "May",
+      "games": [
+        {
+          "name": "World of Tanks Blitz"
+        },
+        {
+          "name": "Hearts of Iron IV"
+        }
+      ]
+    },
+    {
+      "month": "June",
+      "games": [
+        {
+          "name": "Risk of Rain 2"
+        },
+        {
+          "name": "Far Cry New Dawn"
+        },
+        {
+          "name": "Hero's Hour"
+        },
+        {
+          "name": "Supreme Commander 2"
+        },
+        {
+          "name": "Team Fortress 2"
+        }
+      ]
+    },
+    {
+      "month": "July",
+      "games": [
+        {
+          "name": "Destiny 2"
+        },
+        {
+          "name": "Grand Theft Auto V"
+        },
+        {
+          "name": "Terraria"
+        }
+      ]
+    },
+    {
+      "month": "August",
+      "games": [
+        {
+          "name": "Grand Theft Auto V"
+        },
+        {
+          "name": "Terraria"
+        }
+      ]
+    },
+    {
+      "month": "September",
+      "games": [
+        {
+          "name": "World of Tanks Blitz"
+        },
+        {
+          "name": "Slime Rancher 2"
+        },
+        {
+          "name": "ARK: Survival Evolved"
+        }
+      ]
+    },
+    {
+      "month": "October",
+      "games": [
+        {
+          "name": "World of Tanks Blitz"
+        }
+      ]
+    },
+    {
+      "month": "November",
+      "games": [
+        {
+          "name": "Hearts of Iron IV"
+        },
+        {
+          "name": "Call of Duty: Modern Warfare II (2022)"
+        },
+        {
+          "name": "World of Tanks Blitz"
+        }
+      ]
+    },
+    {
+      "month": "December",
+      "games": [
+        {
+          "name": "Anno 1800"
+        },
+        {
+          "name": "Hearts of Iron IV"
+        },
+        {
+          "name": "Call of Duty: Modern Warfare II (2022)"
+        }
+      ]
+    }
+  ]
+}

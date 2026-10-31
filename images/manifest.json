@@ -1,4 +1,22 @@
 {
+  "ARK: Survival Evolved": {
+    "file": "images/ark-survival-evolved.jpg",
+    "matched": "Ark: Survival Evolved",
+    "year": 2017,
+    "igdb_id": 10239
+  },
+  "Anno 1404": {
+    "file": "images/anno-1404.jpg",
+    "matched": "Anno 1404: History Edition",
+    "year": 2020,
+    "igdb_id": 135738
+  },
+  "Anno 1800": {
+    "file": "images/anno-1800.jpg",
+    "matched": "Anno 1800",
+    "year": 2019,
+    "igdb_id": 55036
+  },
   "Apex Legends": {
     "file": "images/apex-legends.jpg",
     "matched": "Apex Legends",
@@ -107,6 +125,12 @@
     "year": 2011,
     "igdb_id": 979
   },
+  "Call of Duty: Modern Warfare II (2022)": {
+    "file": "images/call-of-duty-modern-warfare-ii-2022.jpg",
+    "matched": "Call of Duty: Modern Warfare II",
+    "year": 2022,
+    "igdb_id": 200165
+  },
   "Cookie Clicker": {
     "file": "images/cookie-clicker.jpg",
     "matched": "Cookie Clicker",
@@ -136,6 +160,12 @@
     "matched": "Deadzone: Rogue",
     "year": 2025,
     "igdb_id": 316979
+  },
+  "Destiny 2": {
+    "file": "images/destiny-2.jpg",
+    "matched": "Destiny 2",
+    "year": 2017,
+    "igdb_id": 25657
   },
   "Detroit: Become Human": {
     "file": "images/detroit-become-human.jpg",
@@ -232,6 +262,12 @@
     "matched": "Far Cry 3: Blood Dragon",
     "year": 2013,
     "igdb_id": 2001
+  },
+  "Far Cry 5": {
+    "file": "images/far-cry-5.jpg",
+    "matched": "Far Cry 5",
+    "year": 2018,
+    "igdb_id": 28552
   },
   "Far Cry 6": {
     "file": "images/far-cry-6.jpg",
@@ -341,6 +377,12 @@
     "year": 2004,
     "igdb_id": 986
   },
+  "Halo Infinite": {
+    "file": "images/halo-infinite.jpg",
+    "matched": "Halo Infinite",
+    "year": 2021,
+    "igdb_id": 103281
+  },
   "Halo: Combat Evolved": {
     "file": "images/halo-combat-evolved.jpg",
     "matched": "Halo: Combat Evolved",
@@ -364,6 +406,12 @@
     "matched": "Helldivers 2",
     "year": 2024,
     "igdb_id": 250616
+  },
+  "Hero's Hour": {
+    "file": "images/hero-s-hour.jpg",
+    "matched": "Hero's Hour",
+    "year": 2021,
+    "igdb_id": 145822
   },
   "Immortals Fenyx Rising": {
     "file": "images/immortals-fenyx-rising.jpg",
@@ -454,6 +502,12 @@
     "matched": "Overwatch",
     "year": 2023,
     "igdb_id": 125174
+  },
+  "Paladins": {
+    "file": "images/paladins.jpg",
+    "matched": "Paladins",
+    "year": 2017,
+    "igdb_id": 11544
   },
   "Plague Inc.": {
     "file": "images/plague-inc.jpg",
@@ -581,6 +635,12 @@
     "year": 2018,
     "igdb_id": 11137
   },
+  "Slime Rancher 2": {
+    "file": "images/slime-rancher-2.jpg",
+    "matched": "Slime Rancher 2",
+    "year": 2025,
+    "igdb_id": 152243
+  },
   "Star Wars Jedi: Fallen Order": {
     "file": "images/star-wars-jedi-fallen-order.jpg",
     "matched": "Star Wars Jedi: Fallen Order",
@@ -599,11 +659,23 @@
     "year": 2023,
     "igdb_id": 254339
   },
+  "Supreme Commander 2": {
+    "file": "images/supreme-commander-2.jpg",
+    "matched": "Supreme Commander 2",
+    "year": 2010,
+    "igdb_id": 7201
+  },
   "Tank Mechanic Simulator": {
     "file": "images/tank-mechanic-simulator.jpg",
     "matched": "Tank Mechanic Simulator",
     "year": 2020,
     "igdb_id": 43115
+  },
+  "Team Fortress 2": {
+    "file": "images/team-fortress-2.jpg",
+    "matched": "Team Fortress 2",
+    "year": 2007,
+    "igdb_id": 891
   },
   "Terraria": {
     "file": "images/terraria.jpg",
@@ -682,6 +754,12 @@
     "matched": "World of Tanks: Blitz",
     "year": 2014,
     "igdb_id": 7393
+  },
+  "World of Warships": {
+    "file": "images/world-of-warships.jpg",
+    "matched": "World of Warships",
+    "year": 2015,
+    "igdb_id": 5587
   },
   "World of Warships Legends": {
     "file": "images/world-of-warships-legends.jpg",
