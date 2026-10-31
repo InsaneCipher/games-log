@@ -1,0 +1,176 @@
+{
+  "year": 2023,
+  "months": [
+    {
+      "month": "January",
+      "games": [
+        {
+          "name": "Far Cry New Dawn"
+        },
+        {
+          "name": "Battlefield 3"
+        },
+        {
+          "name": "Battlefield 4"
+        },
+        {
+          "name": "Battlefield 1"
+        }
+      ]
+    },
+    {
+      "month": "February",
+      "games": [
+        {
+          "name": "Dragon Age: Inquisition"
+        },
+        {
+          "name": "Valheim"
+        }
+      ]
+    },
+    {
+      "month": "March",
+      "games": [
+        {
+          "name": "Risk of Rain 2"
+        }
+      ]
+    },
+    {
+      "month": "April",
+      "games": [
+        {
+          "name": "Forza Horizon 5"
+        },
+        {
+          "name": "Sea of Thieves"
+        }
+      ]
+    },
+    {
+      "month": "May",
+      "games": [
+        {
+          "name": "LEGO Star Wars: The Skywalker Saga"
+        },
+        {
+          "name": "The Legend of Zelda: Breath of the Wild"
+        },
+        {
+          "name": "The Legend of Zelda: Tears of the Kingdom"
+        }
+      ]
+    },
+    {
+      "month": "June",
+      "games": [
+        {
+          "name": "Pokémon: Let's Go, Pikachu!"
+        },
+        {
+          "name": "Pokémon: Sword"
+        },
+        {
+          "name": "Call of Duty: Modern Warfare (2019)"
+        },
+        {
+          "name": "Far Cry 3: Blood Dragon"
+        }
+      ]
+    },
+    {
+      "month": "July",
+      "games": [
+        {
+          "name": "Mafia"
+        },
+        {
+          "name": "Overwatch 2"
+        },
+        {
+          "name": "World of Tanks Blitz"
+        }
+      ]
+    },
+    {
+      "month": "August",
+      "games": [
+        {
+          "name": "Terraria"
+        },
+        {
+          "name": "New Super Mario Bros. U Deluxe"
+        }
+      ]
+    },
+    {
+      "month": "September",
+      "games": [
+        {
+          "name": "Portal"
+        },
+        {
+          "name": "Portal 2"
+        },
+        {
+          "name": "Minecraft"
+        },
+        {
+          "name": "Tom Clancy's Rainbow Six Vegas 2"
+        },
+        {
+          "name": "Far Cry 6"
+        }
+      ]
+    },
+    {
+      "month": "October",
+      "games": [
+        {
+          "name": "Farming Simulator 22"
+        },
+        {
+          "name": "Tom Clancy's Rainbow Six Siege"
+        },
+        {
+          "name": "Middle-earth: Shadow of War"
+        }
+      ]
+    },
+    {
+      "month": "November",
+      "games": [
+        {
+          "name": "Red Faction: Armageddon"
+        },
+        {
+          "name": "Apex Legends"
+        }
+      ]
+    },
+    {
+      "month": "December",
+      "games": [
+        {
+          "name": "Lethal Company"
+        },
+        {
+          "name": "Apex Legends"
+        },
+        {
+          "name": "Titanfall 2"
+        },
+        {
+          "name": "God of War (2018)"
+        },
+        {
+          "name": "Far Cry 6"
+        },
+        {
+          "name": "Super Mario Bros. Wonder"
+        }
+      ]
+    }
+  ]
+}

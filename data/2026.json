@@ -1,0 +1,186 @@
+{
+  "year": 2026,
+  "months": [
+    {
+      "month": "January",
+      "games": [
+        {
+          "name": "Balatro"
+        },
+        {
+          "name": "Borderlands 3"
+        },
+        {
+          "name": "Deadzone: Rogue"
+        },
+        {
+          "name": "Counter-Strike 2"
+        },
+        {
+          "name": "Risk: Global Domination"
+        }
+      ]
+    },
+    {
+      "month": "February",
+      "games": [
+        {
+          "name": "Borderlands"
+        },
+        {
+          "name": "Borderlands 2"
+        },
+        {
+          "name": "Borderlands 3"
+        },
+        {
+          "name": "Forza Horizon 5"
+        },
+        {
+          "name": "New Super Mario Bros. 2"
+        }
+      ]
+    },
+    {
+      "month": "March",
+      "games": [
+        {
+          "name": "Hearts of Iron IV"
+        },
+        {
+          "name": "Minecraft",
+          "note": "AZK"
+        },
+        {
+          "name": "Tank Mechanic Simulator"
+        },
+        {
+          "name": "Dead Space (2023)"
+        },
+        {
+          "name": "Resident Evil 2 (2019)"
+        },
+        {
+          "name": "Resident Evil 3 (2020)"
+        }
+      ]
+    },
+    {
+      "month": "April",
+      "games": [
+        {
+          "name": "Resident Evil 4 (2023)"
+        },
+        {
+          "name": "Little Nightmares"
+        },
+        {
+          "name": "War Thunder"
+        },
+        {
+          "name": "Terraria"
+        }
+      ]
+    },
+    {
+      "month": "May",
+      "games": [
+        {
+          "name": "Terraria"
+        },
+        {
+          "name": "Forza Horizon 6"
+        }
+      ]
+    },
+    {
+      "month": "June",
+      "games": [
+        {
+          "name": "Gamble With Your Friends"
+        },
+        {
+          "name": "Counter-Strike 2"
+        }
+      ]
+    },
+    {
+      "month": "July",
+      "games": [
+        {
+          "name": "Counter-Strike 2"
+        },
+        {
+          "name": "Dredge"
+        },
+        {
+          "name": "Grand Theft Auto IV"
+        }
+      ]
+    },
+    {
+      "month": "August",
+      "games": [
+        {
+          "name": "Grand Theft Auto: Chinatown Wars"
+        },
+        {
+          "name": "Gambit"
+        }
+      ]
+    },
+    {
+      "month": "September",
+      "games": [
+        {
+          "name": "Gambit"
+        },
+        {
+          "name": "Counter-Strike 2"
+        },
+        {
+          "name": "Diablo IV"
+        },
+        {
+          "name": "World of Warships Legends"
+        },
+        {
+          "name": "Minecraft",
+          "note": "AZK"
+        }
+      ]
+    },
+    {
+      "month": "October",
+      "games": [
+        {
+          "name": "Minecraft Dungeons 2"
+        },
+        {
+          "name": "Minecraft",
+          "note": "SC"
+        },
+        {
+          "name": "Halo: Reach"
+        },
+        {
+          "name": "Halo: Combat Evolved"
+        },
+        {
+          "name": "Halo 2"
+        },
+        {
+          "name": "Call of Duty: Black Ops 6"
+        }
+      ]
+    },
+    {
+      "month": "November",
+      "games": []
+    },
+    {
+      "month": "December",
+      "games": []
+    }
+  ]
+}

@@ -1,0 +1,692 @@
+{
+  "Apex Legends": {
+    "file": "images/apex-legends.jpg",
+    "matched": "Apex Legends",
+    "year": 2019,
+    "igdb_id": 114795
+  },
+  "Asphalt Injection": {
+    "file": "images/asphalt-injection.jpg",
+    "matched": "Asphalt: Injection",
+    "year": 2011,
+    "igdb_id": 8646
+  },
+  "Assassin's Creed Origins": {
+    "file": "images/assassin-s-creed-origins.jpg",
+    "matched": "Assassin's Creed Origins",
+    "year": 2017,
+    "igdb_id": 28540
+  },
+  "Balatro": {
+    "file": "images/balatro.jpg",
+    "matched": "Balatro",
+    "year": 2024,
+    "igdb_id": 251833
+  },
+  "Battlefield 1": {
+    "file": "images/battlefield-1.jpg",
+    "matched": "Battlefield 1",
+    "year": 2016,
+    "igdb_id": 18320
+  },
+  "Battlefield 3": {
+    "file": "images/battlefield-3.jpg",
+    "matched": "Battlefield 3",
+    "year": 2011,
+    "igdb_id": 343
+  },
+  "Battlefield 4": {
+    "file": "images/battlefield-4.jpg",
+    "matched": "Battlefield 4",
+    "year": 2013,
+    "igdb_id": 1979
+  },
+  "Bloons TD 6": {
+    "file": "images/bloons-td-6.jpg",
+    "matched": "Bloons TD 6",
+    "year": 2018,
+    "igdb_id": 103380
+  },
+  "Borderlands": {
+    "file": "images/borderlands.jpg",
+    "matched": "Borderlands",
+    "year": 2009,
+    "igdb_id": 498
+  },
+  "Borderlands 2": {
+    "file": "images/borderlands-2.jpg",
+    "matched": "Borderlands 2",
+    "year": 2012,
+    "igdb_id": 1011
+  },
+  "Borderlands 3": {
+    "file": "images/borderlands-3.jpg",
+    "matched": "Borderlands 3",
+    "year": 2019,
+    "igdb_id": 19164
+  },
+  "Call of Duty 4: Modern Warfare": {
+    "file": "images/call-of-duty-4-modern-warfare.jpg",
+    "matched": "Call of Duty 4: Modern Warfare",
+    "year": 2007,
+    "igdb_id": 134651
+  },
+  "Call of Duty: Black Ops": {
+    "file": "images/call-of-duty-black-ops.jpg",
+    "matched": "Call of Duty: Black Ops",
+    "year": 2010,
+    "igdb_id": 545
+  },
+  "Call of Duty: Black Ops 6": {
+    "file": "images/call-of-duty-black-ops-6.jpg",
+    "matched": "Call of Duty: Black Ops 6",
+    "year": 2024,
+    "igdb_id": 302156
+  },
+  "Call of Duty: Black Ops II": {
+    "file": "images/call-of-duty-black-ops-ii.jpg",
+    "matched": "Call of Duty: Black Ops II",
+    "year": 2012,
+    "igdb_id": 1122
+  },
+  "Call of Duty: Modern Warfare (2019)": {
+    "file": "images/call-of-duty-modern-warfare-2019.jpg",
+    "matched": "Call of Duty: Modern Warfare",
+    "year": 2019,
+    "igdb_id": 119177
+  },
+  "Call of Duty: Modern Warfare 2": {
+    "file": "images/call-of-duty-modern-warfare-2.jpg",
+    "matched": "Call of Duty: Modern Warfare 2",
+    "year": 2009,
+    "igdb_id": 559
+  },
+  "Call of Duty: Modern Warfare 3": {
+    "file": "images/call-of-duty-modern-warfare-3.jpg",
+    "matched": "Call of Duty: Modern Warfare 3",
+    "year": 2011,
+    "igdb_id": 979
+  },
+  "Cookie Clicker": {
+    "file": "images/cookie-clicker.jpg",
+    "matched": "Cookie Clicker",
+    "year": 2013,
+    "igdb_id": 3241
+  },
+  "Counter-Strike 2": {
+    "file": "images/counter-strike-2.jpg",
+    "matched": "Counter-Strike 2",
+    "year": 2023,
+    "igdb_id": 242408
+  },
+  "Cyberpunk 2077": {
+    "file": "images/cyberpunk-2077.jpg",
+    "matched": "Cyberpunk 2077",
+    "year": 2020,
+    "igdb_id": 1877
+  },
+  "Dead Space (2023)": {
+    "file": "images/dead-space-2023.jpg",
+    "matched": "Dead Space",
+    "year": 2023,
+    "igdb_id": 159119
+  },
+  "Deadzone: Rogue": {
+    "file": "images/deadzone-rogue.jpg",
+    "matched": "Deadzone: Rogue",
+    "year": 2025,
+    "igdb_id": 316979
+  },
+  "Detroit: Become Human": {
+    "file": "images/detroit-become-human.jpg",
+    "matched": "Detroit: Become Human",
+    "year": 2018,
+    "igdb_id": 14362
+  },
+  "Diablo IV": {
+    "file": "images/diablo-iv.jpg",
+    "matched": "Diablo IV",
+    "year": 2023,
+    "igdb_id": 125165
+  },
+  "Doom (2016)": {
+    "file": "images/doom-2016.jpg",
+    "matched": "Doom",
+    "year": 2016,
+    "igdb_id": 7351
+  },
+  "Doom Eternal": {
+    "file": "images/doom-eternal.jpg",
+    "matched": "Doom Eternal",
+    "year": 2020,
+    "igdb_id": 103298
+  },
+  "Dragon Age: Inquisition": {
+    "file": "images/dragon-age-inquisition.jpg",
+    "matched": "Dragon Age: Inquisition",
+    "year": 2014,
+    "igdb_id": 1887
+  },
+  "Dredge": {
+    "file": "images/dredge.jpg",
+    "matched": "Dredge",
+    "year": 2023,
+    "igdb_id": 164867
+  },
+  "Dungeon Defenders II": {
+    "file": "images/dungeon-defenders-ii.jpg",
+    "matched": "Dungeon Defenders II",
+    "year": 2014,
+    "igdb_id": 3202
+  },
+  "EA Sports FC 24": {
+    "file": "images/ea-sports-fc-24.jpg",
+    "matched": "EA Sports FC 24",
+    "year": 2023,
+    "igdb_id": 256092
+  },
+  "Euro Truck Simulator 2": {
+    "file": "images/euro-truck-simulator-2.jpg",
+    "matched": "Euro Truck Simulator 2",
+    "year": 2012,
+    "igdb_id": 3070
+  },
+  "F1 2011": {
+    "file": "images/f1-2011.jpg",
+    "matched": "F1 2011",
+    "year": 2011,
+    "igdb_id": 1374
+  },
+  "F1 2018": {
+    "file": "images/f1-2018.jpg",
+    "matched": "F1 2018",
+    "year": 2018,
+    "igdb_id": 101439
+  },
+  "F1 2021": {
+    "file": "images/f1-2021.jpg",
+    "matched": "F1 2021",
+    "year": 2021,
+    "igdb_id": 145838
+  },
+  "F1 23": {
+    "file": "images/f1-23.jpg",
+    "matched": "F1 23",
+    "year": 2023,
+    "igdb_id": 240558
+  },
+  "F1 25": {
+    "file": "images/f1-25.jpg",
+    "matched": "F1 25",
+    "year": 2025,
+    "igdb_id": 336964
+  },
+  "FIFA 14": {
+    "file": "images/fifa-14.jpg",
+    "matched": "FIFA 14",
+    "year": 2013,
+    "igdb_id": 2920
+  },
+  "Far Cry 3: Blood Dragon": {
+    "file": "images/far-cry-3-blood-dragon.jpg",
+    "matched": "Far Cry 3: Blood Dragon",
+    "year": 2013,
+    "igdb_id": 2001
+  },
+  "Far Cry 6": {
+    "file": "images/far-cry-6.jpg",
+    "matched": "Far Cry 6",
+    "year": 2021,
+    "igdb_id": 126290
+  },
+  "Far Cry New Dawn": {
+    "file": "images/far-cry-new-dawn.jpg",
+    "matched": "Far Cry New Dawn",
+    "year": 2019,
+    "igdb_id": 113111
+  },
+  "Far Cry Primal": {
+    "file": "images/far-cry-primal.jpg",
+    "matched": "Far Cry: Primal",
+    "year": 2016,
+    "igdb_id": 13182
+  },
+  "Farming Simulator 22": {
+    "file": "images/farming-simulator-22.jpg",
+    "matched": "Farming Simulator 22",
+    "year": 2021,
+    "igdb_id": 146112
+  },
+  "Farming Simulator 25": {
+    "file": "images/farming-simulator-25.jpg",
+    "matched": "Farming Simulator 25",
+    "year": 2024,
+    "igdb_id": 306822
+  },
+  "Fortnite": {
+    "file": "images/fortnite.jpg",
+    "matched": "Fortnite",
+    "year": 2018,
+    "igdb_id": 231090
+  },
+  "Forza Horizon 4": {
+    "file": "images/forza-horizon-4.jpg",
+    "matched": "Forza Horizon 4",
+    "year": 2018,
+    "igdb_id": 82090
+  },
+  "Forza Horizon 5": {
+    "file": "images/forza-horizon-5.jpg",
+    "matched": "Forza Horizon 5",
+    "year": 2021,
+    "igdb_id": 141503
+  },
+  "Forza Horizon 6": {
+    "file": "images/forza-horizon-6.jpg",
+    "matched": "Forza Horizon 6",
+    "year": 2026,
+    "igdb_id": 348330
+  },
+  "Gambit": {
+    "file": "images/gambit.jpg",
+    "matched": "Gambit!",
+    "year": 2022,
+    "igdb_id": 193173
+  },
+  "Gamble With Your Friends": {
+    "file": "images/gamble-with-your-friends.jpg",
+    "matched": "Gamble With Your Friends",
+    "year": 2026,
+    "igdb_id": 361027
+  },
+  "God of War (2018)": {
+    "file": "images/god-of-war-2018.jpg",
+    "matched": "God of War",
+    "year": 2018,
+    "igdb_id": 19560
+  },
+  "God of War Ragnarök": {
+    "file": "images/god-of-war-ragnarok.jpg",
+    "matched": "God of War Ragnarök",
+    "year": 2022,
+    "igdb_id": 112875
+  },
+  "Grand Theft Auto IV": {
+    "file": "images/grand-theft-auto-iv.jpg",
+    "matched": "Grand Theft Auto IV",
+    "year": 2008,
+    "igdb_id": 731
+  },
+  "Grand Theft Auto V": {
+    "file": "images/grand-theft-auto-v.jpg",
+    "matched": "Grand Theft Auto V",
+    "year": 2015,
+    "igdb_id": 239064
+  },
+  "Grand Theft Auto: Chinatown Wars": {
+    "file": "images/grand-theft-auto-chinatown-wars.jpg",
+    "matched": "Grand Theft Auto: Chinatown Wars",
+    "year": 2009,
+    "igdb_id": 3270
+  },
+  "Gunfire Reborn": {
+    "file": "images/gunfire-reborn.jpg",
+    "matched": "Gunfire Reborn",
+    "year": 2021,
+    "igdb_id": 134483
+  },
+  "Halo 2": {
+    "file": "images/halo-2.jpg",
+    "matched": "Halo 2",
+    "year": 2004,
+    "igdb_id": 986
+  },
+  "Halo: Combat Evolved": {
+    "file": "images/halo-combat-evolved.jpg",
+    "matched": "Halo: Combat Evolved",
+    "year": 2001,
+    "igdb_id": 740
+  },
+  "Halo: Reach": {
+    "file": "images/halo-reach.jpg",
+    "matched": "Halo: Reach",
+    "year": 2010,
+    "igdb_id": 990
+  },
+  "Hearts of Iron IV": {
+    "file": "images/hearts-of-iron-iv.jpg",
+    "matched": "Hearts of Iron IV",
+    "year": 2016,
+    "igdb_id": 15894
+  },
+  "Helldivers 2": {
+    "file": "images/helldivers-2.jpg",
+    "matched": "Helldivers 2",
+    "year": 2024,
+    "igdb_id": 250616
+  },
+  "Immortals Fenyx Rising": {
+    "file": "images/immortals-fenyx-rising.jpg",
+    "matched": "Immortals Fenyx Rising",
+    "year": 2020,
+    "igdb_id": 119357
+  },
+  "LEGO Star Wars: The Skywalker Saga": {
+    "file": "images/lego-star-wars-the-skywalker-saga.jpg",
+    "matched": "LEGO Star Wars: The Skywalker Saga",
+    "year": 2022,
+    "igdb_id": 119305
+  },
+  "Lethal Company": {
+    "file": "images/lethal-company.jpg",
+    "matched": "Lethal Company",
+    "year": 2023,
+    "igdb_id": 212089
+  },
+  "Little Nightmares": {
+    "file": "images/little-nightmares.jpg",
+    "matched": "Little Nightmares",
+    "year": 2017,
+    "igdb_id": 9174
+  },
+  "Mafia": {
+    "file": "images/mafia.jpg",
+    "matched": "Mafia",
+    "year": 2020,
+    "igdb_id": 325379
+  },
+  "Marvel Rivals": {
+    "file": "images/marvel-rivals.jpg",
+    "matched": "Marvel Rivals",
+    "year": 2024,
+    "igdb_id": 294041
+  },
+  "Metro Exodus": {
+    "file": "images/metro-exodus.jpg",
+    "matched": "Metro Exodus",
+    "year": 2019,
+    "igdb_id": 37016
+  },
+  "Middle-earth: Shadow of War": {
+    "file": "images/middle-earth-shadow-of-war.jpg",
+    "matched": "Middle-earth: Shadow of War",
+    "year": 2017,
+    "igdb_id": 27421
+  },
+  "Minecraft": {
+    "file": "images/minecraft.jpg",
+    "matched": "Minecraft",
+    "year": 2016,
+    "igdb_id": 135400
+  },
+  "Minecraft Dungeons": {
+    "file": "images/minecraft-dungeons.jpg",
+    "matched": "Minecraft Dungeons",
+    "year": 2020,
+    "igdb_id": 110474
+  },
+  "Minecraft Dungeons 2": {
+    "file": "images/minecraft-dungeons-2.jpg",
+    "matched": "Minecraft Dungeons II",
+    "year": 2026,
+    "igdb_id": 395525
+  },
+  "New Super Mario Bros.": {
+    "file": "images/new-super-mario-bros.jpg",
+    "matched": "New Super Mario Bros.",
+    "year": 2006,
+    "igdb_id": 1076
+  },
+  "New Super Mario Bros. 2": {
+    "file": "images/new-super-mario-bros-2.jpg",
+    "matched": "New Super Mario Bros. 2",
+    "year": 2012,
+    "igdb_id": 1080
+  },
+  "New Super Mario Bros. U Deluxe": {
+    "file": "images/new-super-mario-bros-u-deluxe.jpg",
+    "matched": "New Super Mario Bros. U Deluxe",
+    "year": 2019,
+    "igdb_id": 109457
+  },
+  "Overwatch 2": {
+    "file": "images/overwatch-2.jpg",
+    "matched": "Overwatch 2: Invasion Bundle",
+    "year": 2023,
+    "igdb_id": 261349
+  },
+  "Plague Inc.": {
+    "file": "images/plague-inc.jpg",
+    "matched": "Plague Inc.",
+    "year": 2012,
+    "igdb_id": 2065
+  },
+  "Pokémon Brilliant Diamond": {
+    "file": "images/pokemon-brilliant-diamond.jpg",
+    "matched": "Pokémon Brilliant Diamond",
+    "year": 2021,
+    "igdb_id": 144051
+  },
+  "Pokémon Platinum": {
+    "file": "images/pokemon-platinum.jpg",
+    "matched": "Pokémon Platinum Version",
+    "year": 2008,
+    "igdb_id": 1519
+  },
+  "Pokémon Y": {
+    "file": "images/pokemon-y.jpg",
+    "matched": "Pokémon Y",
+    "year": 2013,
+    "igdb_id": 2287
+  },
+  "Pokémon: Let's Go, Pikachu!": {
+    "file": "images/pokemon-let-s-go-pikachu.jpg",
+    "matched": "Pokémon: Let's Go, Pikachu!",
+    "year": 2018,
+    "igdb_id": 25877
+  },
+  "Pokémon: Sword": {
+    "file": "images/pokemon-sword.jpg",
+    "matched": "Pokémon Sword",
+    "year": 2019,
+    "igdb_id": 37382
+  },
+  "Portal": {
+    "file": "images/portal.jpg",
+    "matched": "Portal",
+    "year": 1986,
+    "igdb_id": 14546
+  },
+  "Portal 2": {
+    "file": "images/portal-2.jpg",
+    "matched": "Portal 2",
+    "year": 2011,
+    "igdb_id": 72
+  },
+  "Red Faction: Armageddon": {
+    "file": "images/red-faction-armageddon.jpg",
+    "matched": "Red Faction: Armageddon",
+    "year": 2011,
+    "igdb_id": 528
+  },
+  "Rematch": {
+    "file": "images/rematch.jpg",
+    "matched": "Rematch",
+    "year": 2025,
+    "igdb_id": 325588
+  },
+  "Resident Evil 2 (2019)": {
+    "file": "images/resident-evil-2-2019.jpg",
+    "matched": "Resident Evil 2",
+    "year": 2019,
+    "igdb_id": 19686
+  },
+  "Resident Evil 3 (2020)": {
+    "file": "images/resident-evil-3-2020.jpg",
+    "matched": "Resident Evil 3",
+    "year": 2020,
+    "igdb_id": 115115
+  },
+  "Resident Evil 4 (2023)": {
+    "file": "images/resident-evil-4-2023.jpg",
+    "matched": "Resident Evil 4",
+    "year": 2023,
+    "igdb_id": 132181
+  },
+  "Resident Evil 7: Biohazard": {
+    "file": "images/resident-evil-7-biohazard.jpg",
+    "matched": "Resident Evil 7: Biohazard",
+    "year": 2017,
+    "igdb_id": 19562
+  },
+  "Resident Evil Village": {
+    "file": "images/resident-evil-village.jpg",
+    "matched": "Resident Evil Village",
+    "year": 2021,
+    "igdb_id": 55163
+  },
+  "Risk of Rain 2": {
+    "file": "images/risk-of-rain-2.jpg",
+    "matched": "Risk of Rain 2",
+    "year": 2020,
+    "igdb_id": 28512
+  },
+  "Risk: Global Domination": {
+    "file": "images/risk-global-domination.jpg",
+    "matched": "Risk: Global Domination",
+    "year": 2015,
+    "igdb_id": 121346
+  },
+  "Roboquest": {
+    "file": "images/roboquest.jpg",
+    "matched": "RoboQuest",
+    "year": 1996,
+    "igdb_id": 199912
+  },
+  "Saints Row IV": {
+    "file": "images/saints-row-iv.jpg",
+    "matched": "Saints Row IV",
+    "year": 2013,
+    "igdb_id": 1981
+  },
+  "Sea of Thieves": {
+    "file": "images/sea-of-thieves.jpg",
+    "matched": "Sea of Thieves",
+    "year": 2018,
+    "igdb_id": 11137
+  },
+  "Star Wars Jedi: Fallen Order": {
+    "file": "images/star-wars-jedi-fallen-order.jpg",
+    "matched": "Star Wars Jedi: Fallen Order",
+    "year": 2019,
+    "igdb_id": 74701
+  },
+  "Star Wars Jedi: Survivor": {
+    "file": "images/star-wars-jedi-survivor.jpg",
+    "matched": "Star Wars Jedi: Survivor",
+    "year": 2023,
+    "igdb_id": 201156
+  },
+  "Super Mario Bros. Wonder": {
+    "file": "images/super-mario-bros-wonder.jpg",
+    "matched": "Super Mario Bros. Wonder",
+    "year": 2023,
+    "igdb_id": 254339
+  },
+  "Tank Mechanic Simulator": {
+    "file": "images/tank-mechanic-simulator.jpg",
+    "matched": "Tank Mechanic Simulator",
+    "year": 2020,
+    "igdb_id": 43115
+  },
+  "Terraria": {
+    "file": "images/terraria.jpg",
+    "matched": "Terraria",
+    "year": 2011,
+    "igdb_id": 1879
+  },
+  "The Farmer Was Replaced": {
+    "file": "images/the-farmer-was-replaced.jpg",
+    "matched": "The Farmer Was Replaced",
+    "year": 2025,
+    "igdb_id": 243931
+  },
+  "The Finals": {
+    "file": "images/the-finals.jpg",
+    "matched": "Final Fantasy IV",
+    "year": 2007,
+    "igdb_id": 399
+  },
+  "The Legend of Zelda: Breath of the Wild": {
+    "file": "images/the-legend-of-zelda-breath-of-the-wild.jpg",
+    "matched": "The Legend of Zelda: Breath of the Wild",
+    "year": 2017,
+    "igdb_id": 7346
+  },
+  "The Legend of Zelda: Tears of the Kingdom": {
+    "file": "images/the-legend-of-zelda-tears-of-the-kingdom.jpg",
+    "matched": "The Legend of Zelda: Tears of the Kingdom",
+    "year": 2023,
+    "igdb_id": 119388
+  },
+  "Titanfall 2": {
+    "file": "images/titanfall-2.jpg",
+    "matched": "Titanfall 2",
+    "year": 2016,
+    "igdb_id": 17447
+  },
+  "Tom Clancy's Rainbow Six Siege": {
+    "file": "images/tom-clancy-s-rainbow-six-siege.jpg",
+    "matched": "Tom Clancy's Rainbow Six Siege: North Star",
+    "year": 2021,
+    "igdb_id": 158944
+  },
+  "Tom Clancy's Rainbow Six Vegas 2": {
+    "file": "images/tom-clancy-s-rainbow-six-vegas-2.jpg",
+    "matched": "Tom Clancy's Rainbow Six: Vegas 2",
+    "year": 2008,
+    "igdb_id": 1853
+  },
+  "Valheim": {
+    "file": "images/valheim.jpg",
+    "matched": "Valheim",
+    "year": 2026,
+    "igdb_id": 104967
+  },
+  "War Thunder": {
+    "file": "images/war-thunder.jpg",
+    "matched": "War Thunder",
+    "year": 2013,
+    "igdb_id": 2165
+  },
+  "Warhammer 40,000: Space Marine 2": {
+    "file": "images/warhammer-40-000-space-marine-2.jpg",
+    "matched": "Warhammer 40,000: Space Marine 2 - Ultima Limited Edition",
+    "year": 2025,
+    "igdb_id": 397518
+  },
+  "World of Tanks": {
+    "file": "images/world-of-tanks.jpg",
+    "matched": "World of Tanks",
+    "year": 2011,
+    "igdb_id": 1184
+  },
+  "World of Tanks Blitz": {
+    "file": "images/world-of-tanks-blitz.jpg",
+    "matched": "World of Tanks: Blitz",
+    "year": 2014,
+    "igdb_id": 7393
+  },
+  "World of Warships Legends": {
+    "file": "images/world-of-warships-legends.jpg",
+    "matched": "World of Warships: Legends",
+    "year": 2019,
+    "igdb_id": 107250
+  },
+  "Ziggurat 2": {
+    "file": "images/ziggurat-2.jpg",
+    "matched": "Ziggurat 2",
+    "year": 2020,
+    "igdb_id": 139416
+  }
+}

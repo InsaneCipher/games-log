@@ -1,0 +1,196 @@
+{
+  "year": 2024,
+  "months": [
+    {
+      "month": "January",
+      "games": [
+        {
+          "name": "Super Mario Bros. Wonder"
+        },
+        {
+          "name": "Metro Exodus"
+        },
+        {
+          "name": "Cyberpunk 2077"
+        },
+        {
+          "name": "The Finals"
+        }
+      ]
+    },
+    {
+      "month": "February",
+      "games": [
+        {
+          "name": "Assassin's Creed Origins"
+        },
+        {
+          "name": "Helldivers 2"
+        },
+        {
+          "name": "Risk of Rain 2"
+        }
+      ]
+    },
+    {
+      "month": "March",
+      "games": [
+        {
+          "name": "World of Tanks"
+        },
+        {
+          "name": "Minecraft",
+          "note": "Solo"
+        }
+      ]
+    },
+    {
+      "month": "April",
+      "games": [
+        {
+          "name": "World of Tanks"
+        },
+        {
+          "name": "Minecraft",
+          "note": "FD"
+        },
+        {
+          "name": "Pokémon Brilliant Diamond"
+        }
+      ]
+    },
+    {
+      "month": "May",
+      "games": [
+        {
+          "name": "Dungeon Defenders II"
+        },
+        {
+          "name": "Star Wars Jedi: Fallen Order"
+        },
+        {
+          "name": "Detroit: Become Human"
+        },
+        {
+          "name": "Saints Row IV"
+        }
+      ]
+    },
+    {
+      "month": "June",
+      "games": [
+        {
+          "name": "Grand Theft Auto V",
+          "note": "Story mode"
+        },
+        {
+          "name": "Hearts of Iron IV"
+        },
+        {
+          "name": "Apex Legends"
+        },
+        {
+          "name": "Minecraft"
+        }
+      ]
+    },
+    {
+      "month": "July",
+      "games": [
+        {
+          "name": "Resident Evil Village"
+        },
+        {
+          "name": "Cookie Clicker"
+        },
+        {
+          "name": "Plague Inc."
+        },
+        {
+          "name": "Minecraft",
+          "note": "SC8"
+        }
+      ]
+    },
+    {
+      "month": "August",
+      "games": [
+        {
+          "name": "Minecraft",
+          "note": "Gun Server"
+        }
+      ]
+    },
+    {
+      "month": "September",
+      "games": [
+        {
+          "name": "Euro Truck Simulator 2"
+        },
+        {
+          "name": "War Thunder"
+        },
+        {
+          "name": "EA Sports FC 24"
+        },
+        {
+          "name": "F1 23"
+        },
+        {
+          "name": "Risk of Rain 2"
+        },
+        {
+          "name": "Warhammer 40,000: Space Marine 2"
+        },
+        {
+          "name": "Forza Horizon 4"
+        }
+      ]
+    },
+    {
+      "month": "October",
+      "games": [
+        {
+          "name": "Call of Duty: Black Ops"
+        },
+        {
+          "name": "Call of Duty: Black Ops II"
+        },
+        {
+          "name": "Forza Horizon 4"
+        },
+        {
+          "name": "Overwatch 2"
+        },
+        {
+          "name": "Call of Duty: Black Ops 6"
+        }
+      ]
+    },
+    {
+      "month": "November",
+      "games": [
+        {
+          "name": "Call of Duty: Black Ops 6"
+        },
+        {
+          "name": "Farming Simulator 25"
+        }
+      ]
+    },
+    {
+      "month": "December",
+      "games": [
+        {
+          "name": "Marvel Rivals"
+        },
+        {
+          "name": "Bloons TD 6"
+        },
+        {
+          "name": "God of War Ragnarök"
+        }
+      ]
+    }
+  ]
+}

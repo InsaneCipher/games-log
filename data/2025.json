@@ -1,0 +1,194 @@
+{
+  "year": 2025,
+  "months": [
+    {
+      "month": "January",
+      "games": [
+        {
+          "name": "Doom (2016)"
+        },
+        {
+          "name": "Minecraft",
+          "note": "Skyblock & Prisons"
+        }
+      ]
+    },
+    {
+      "month": "February",
+      "games": [
+        {
+          "name": "Fortnite"
+        },
+        {
+          "name": "Overwatch 2"
+        },
+        {
+          "name": "Minecraft",
+          "note": "SC9"
+        }
+      ]
+    },
+    {
+      "month": "March",
+      "games": [
+        {
+          "name": "Immortals Fenyx Rising"
+        },
+        {
+          "name": "Grand Theft Auto V"
+        },
+        {
+          "name": "World of Tanks Blitz"
+        }
+      ]
+    },
+    {
+      "month": "April",
+      "games": [
+        {
+          "name": "F1 2018"
+        },
+        {
+          "name": "F1 2021"
+        }
+      ]
+    },
+    {
+      "month": "May",
+      "games": [
+        {
+          "name": "Minecraft Dungeons"
+        },
+        {
+          "name": "Doom Eternal"
+        },
+        {
+          "name": "Star Wars Jedi: Survivor"
+        }
+      ]
+    },
+    {
+      "month": "June",
+      "games": [
+        {
+          "name": "Call of Duty 4: Modern Warfare"
+        },
+        {
+          "name": "Call of Duty: Modern Warfare 2"
+        },
+        {
+          "name": "Call of Duty: Modern Warfare 3"
+        },
+        {
+          "name": "Euro Truck Simulator 2"
+        },
+        {
+          "name": "Minecraft",
+          "note": "AZK"
+        },
+        {
+          "name": "Rematch"
+        }
+      ]
+    },
+    {
+      "month": "July",
+      "games": [
+        {
+          "name": "Roboquest"
+        },
+        {
+          "name": "Ziggurat 2"
+        },
+        {
+          "name": "Gunfire Reborn"
+        }
+      ]
+    },
+    {
+      "month": "August",
+      "games": [
+        {
+          "name": "F1 2011"
+        },
+        {
+          "name": "Asphalt Injection"
+        },
+        {
+          "name": "FIFA 14"
+        },
+        {
+          "name": "World of Tanks"
+        },
+        {
+          "name": "Pokémon Y"
+        },
+        {
+          "name": "New Super Mario Bros."
+        }
+      ]
+    },
+    {
+      "month": "September",
+      "games": [
+        {
+          "name": "World of Tanks"
+        },
+        {
+          "name": "Pokémon Soul Silver"
+        },
+        {
+          "name": "Pokémon Platinum"
+        }
+      ]
+    },
+    {
+      "month": "October",
+      "games": [
+        {
+          "name": "New Super Mario Bros."
+        },
+        {
+          "name": "New Super Mario Bros. 2"
+        },
+        {
+          "name": "The Farmer Was Replaced"
+        },
+        {
+          "name": "Resident Evil 7: Biohazard"
+        },
+        {
+          "name": "Counter-Strike 2"
+        }
+      ]
+    },
+    {
+      "month": "November",
+      "games": [
+        {
+          "name": "Far Cry Primal"
+        },
+        {
+          "name": "Counter-Strike 2"
+        },
+        {
+          "name": "World of Tanks"
+        }
+      ]
+    },
+    {
+      "month": "December",
+      "games": [
+        {
+          "name": "F1 25"
+        },
+        {
+          "name": "Balatro"
+        },
+        {
+          "name": "Counter-Strike 2"
+        }
+      ]
+    }
+  ]
+}
